@@ -1,0 +1,40 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+@viewport{
+  zoom: 1;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1;
+}
+
+//Enable font-smoothing
+html {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $text-color;
+  font-size: $base-font-size; // Don't modify static unit.
+  font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+body {
+  @include OpenSans;
+  font-size: rem(13px);
+  line-height: 1.53;
+  overflow-x: hidden;
+  text-size-adjust: none;
+  font-weight: normal;
+  font-weight: 300;
+
+  @include susy-media(tablet) {
+    font-size: rem(22px);
+  }
+}

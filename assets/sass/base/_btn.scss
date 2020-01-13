@@ -1,0 +1,47 @@
+.button {
+  @include OpenSans;
+  appearance: none;
+  background-image: none;
+  border-radius: 0;
+  border: rem(1px) solid transparent;
+  box-shadow: none;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(17px);
+  font-weight: normal;
+  line-height: 21px;
+  min-width: rem(201px);
+  outline: 0;
+  outline: none;
+  padding: rem(16px 30px 16px);
+  text-align: center;
+  text-shadow: none;
+  transition: all .3s ease;
+
+  &.blue {
+    @include button-color($light-blue, $white);
+  }
+
+  &.dark-blue {
+    @include button-color($dark-blue, rgba($white, .5));
+  }
+
+  &.yellow {
+    @include button-color($yellow, $white);
+  }
+
+  &.pink {
+    @include button-color($pink, $white);
+  }
+
+  &.green {
+    @include button-color($green, $white);
+  }
+
+  &.large {
+    @include susy-media(mobileLandscape) {
+      min-width: rem(317px);
+    }
+  }
+}

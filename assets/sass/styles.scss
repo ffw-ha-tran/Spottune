@@ -1,0 +1,201 @@
+// STYLES.SCSS
+// This is the main scss file that will be compiled for the project.
+// WARNING: DO NOT EDIT /assets/css/styles.css file manually, this should be generated only by compiler based on this file.
+
+//Include styles for Modern Browsers
+@charset 'UTF-8';
+//Required imports
+@import '../.npm/bower_components/susy/sass/susy';
+
+// Variables
+@import 'base/variables';
+@import 'base/colors';
+
+// Reset
+@import 'base/reset';
+
+// Funtion and Mixins
+@import 'base/functions';
+@import 'base/mixins';
+
+// Base
+@import 'base/fonts';
+@import 'base/grid';
+@import 'base/typography';
+@import 'base/btn';
+@import 'base/form';
+@import 'base/table';
+
+//Helpers classes
+@import 'base/helpers';
+
+// Layouts
+@import 'layouts/layout';
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Style main
+div[overlay="true"] {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    background-image: linear-gradient(to bottom, #000000, #000000), linear-gradient(to bottom, rgba(54, 55, 60, 0.5), rgba(54, 55, 60, 0.5));
+    opacity: .5;
+  }
+}
+
+[data-background-image*="/"] {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Hero
+.top-hero {
+  margin-bottom: 94px;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    min-height: 886px;
+  }
+
+  &__content {
+    color: $white;
+    font-size: 28px;
+    line-height: 45px;
+    max-width: 903px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 190px;
+    padding-top: 190px;
+  }
+}
+
+.medium-hero,
+.bottom-hero {
+  margin-bottom: 150px;
+  &__text {
+    text-align: center;
+    margin-bottom: 74px;
+  }
+
+  &__description {
+    max-width: 703px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__list-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+    min-height: 886px;
+  }
+
+  &__list {
+    color: $white;
+    font-size: 20px;
+    line-height: 36px;
+    max-width: 850px;
+    padding-left: 82px;
+    padding-bottom: 136px;
+  }
+}
+
+// Feature Content
+.feature-content {
+  margin-bottom: 100px;
+
+  &__top {
+    margin-bottom: 30px;
+  }
+
+  &__top-inner {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    max-width: 610px;
+  }
+
+  &__bottom {
+    @extend %clearfix;
+  }
+
+  &__list {
+    width: 40%;
+    float: left;
+    padding-right: 142px;
+    padding-top: 15px;
+
+    li {
+      margin-bottom: 13px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+  }
+
+  &__image {
+    width: 60%;
+    float: right;
+    text-align: right;
+    margin-top: -20px;
+  }
+}
+
+// About us
+.block-about-us {
+  margin-bottom: 100px;
+
+  &__inner {
+    margin-left: 82px;
+    margin-right: 82px;
+  }
+
+  &__line {
+    width: 2px;
+    height: 52px;
+    background-color: $primary-color;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    line-height: 32px;
+    max-width: 887px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Get in touch
+.get-in-touch {
+  margin-bottom: 100px;
+  padding-left: 82px;
+  padding-right: 82px;
+
+  .form-submit {
+    margin-top: 20px;
+  }
+}

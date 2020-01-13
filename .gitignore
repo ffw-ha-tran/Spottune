@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+
+#Ignore files related to Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Ignore sass cache
+assets/.npm/.sass-cache/
+assets/.npm/node_modules
+assets/.npm/bower_components/
+
+# Ignore SASS source maps
+*.css.map
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# SASS #
+##########
+.sass-cache
+
+# DS_Store file on Mac
+*.DS_Store

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spottune</title>
+    <meta name="descriptionription" content="">
+    <meta name="colors" content="yellow=#ebb94d, blue=#022e58, green=#5dd290, pink=#d083a2">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="assets/css/styles.css" />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__brand"><a href="#" title="Logo Spotune"><img src="assets/img/maissg/logo.png"></a></div>
+          <div class="header__sign-in"><a href="#" title="Sign in"><img src="assets/img/maissg/sign-in-light-button.png"></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Main -->
+    <section class="main">
+      <div class="container">
+        <!-- Top Hero -->
+        <div class="top-hero" data-background-image="assets/img/maissg/top-hero.png" asset>
+          <div class="top-hero__inner">
+            <div class="top-hero__content">Spottune is the newly developed, state-of-the-art wireless speaker solution for  <b>retal, restaurants, hotels</b> and <b>businesses</b>. Effortless to install, easy to use and impossible to ignore</div>
+          </div>
+        </div>
+
+        <!-- Medium Hero -->
+        <div class="medium-hero">
+          <div class="medium-hero__text">
+            <img src="assets/img/maissg/icon-1.png">
+            <h2 class="medium-hero__title">Effortless installation</h2>
+            <div class="medium-hero__description">Setting up a speaker system should not be that hard. With Spottune, installation is not a matter of days, but a matter of hours</div>
+          </div>
+          <div class="medium-hero__banner" data-background-image="assets/img/maissg/top-hero.png" asset>
+            <div class="medium-hero__list-wrap">
+              <ul class="medium-hero__list">
+                <li>Perfect integration with existing track lightning</li>
+                <li>Flexibility that allows you to easily change set-up</li>
+                <li>Multiple music zones lets you increase traffic and affect customer flow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Content -->
+        <div class="feature-content">
+          <div class="feature-content__top">
+            <div class="feature-content__top-inner">
+              <img src="assets/img/maissg/icon-2.png">
+              <h2 class="feature-content__title">A unique customer experience</h2>
+              <div class="feature-content__description">Get ready to take customer experience to the next level with the Spottune system.</div>
+            </div>
+          </div>
+          <div class="feature-content__bottom">
+            <div class="feature-content__list">
+              <ul>
+                <li>Flexibility that allows you to easily change set-up</li>
+                <li>Multiple music zones lets you increase traffic and affect customer flow</li>
+                <li>Perfect integration with existing track lightning</li>
+              </ul>
+            </div>
+            <div class="feature-content__image"><img src="assets/img/maissg/feature-content.png"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Hero -->
+        <div class="bottom-hero">
+          <div class="bottom-hero__text">
+            <img src="assets/img/maissg/icon-1.png">
+            <h2 class="bottom-hero__title">Effortless installation</h2>
+            <div class="bottom-hero__description">Setting up a speaker system should not be that hard. With Spottune, installation is not a matter of days, but a matter of hours</div>
+          </div>
+          <div class="bottom-hero__banner" data-background-image="assets/img/maissg/top-hero.png" asset>
+            <div class="bottom-hero__list-wrap">
+              <ul class="bottom-hero__list">
+                <li>Perfect integration with existing track lightning</li>
+                <li>Flexibility that allows you to easily change set-up</li>
+                <li>Multiple music zones lets you increase traffic and affect customer flow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- About us -->
+        <div class="block-about-us">
+          <div class="block-about-us__inner">
+            <div class="block-about-us__line"></div>
+            <h2 class="block-about-us__title">About Spottune</h2>
+            <div class="block-about-us__description">
+              <p>At Spottune we want to revolutionize customer experience bty creating a perfect synergy between sound an simplicty.</p>
+              <p>That is why we have created a wireless speaker system that is perfectly suited for retail, hotels and restaurants. Easy to set up, move around and customize to your needs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="get-in-touch">
+          <h3 class="get-in-touch__title">Get in touch with us</h3>
+          <div class="form-content" form-editor="true">
+            <form form-id="get-in-touch">
+              <div class="form-element">
+                <input type="text" name="name" placeholder="Your Name" class="form-text" />
+              </div>
+              <div class="form-element">
+                <input type="email" name="email" placeholder="Your Email" class="form-email" />
+              </div>
+              <div class="form-element">
+                <input type="text" name="message" placeholder="Your Meassage" class="form-text" />
+              </div>
+              <div class="form-element form-submit form-actions">
+                <button class="button green" type="submit">Send the message</button>
+              </div>
+            </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="block-copyright">
+          <div class="block-copyright__inner">
+            <strong>Spottune</strong><br>
+            Lyngbyvej 2b, 2100 København Ø, Denmark<br>
+            +45 21548778<br>
+            <a href="mailto:mailto@spottune.com">mailto@spottune.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      $(function() {
+        $('form[get-in-touch]').on("submit", function(e) {
+          e.preventDefault();
+
+          var form = e.target;
+          var form_id = $(form).attr("form-id");
+          var submit = $(form).find('[type="submit"]');
+          var payload = {};
+
+          $(submit).attr("disabled", true);
+
+          $(form).find("[name]").each(function(i, el) {
+            payload[$(el).attr("name")] = $(el).val();
+          });
+
+          $.ajax({
+            url: "http://staging.lndr.co/services/forms/" + form_id,
+            type: "POST",
+            data: { payload: payload },
+            complete: function() {
+              $(form).removeClass("submit-failure submit-success form-reset");
+              $(submit).attr("disabled", false);
+            },
+            success: function() {
+              alert('Form submitted successfully!');
+            },
+            error: function() {
+              alert('Form submitted unsuccessfully!');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

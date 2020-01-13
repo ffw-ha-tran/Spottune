@@ -1,0 +1,20 @@
+.header {
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  &__brand {
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  &__sign-in {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+}

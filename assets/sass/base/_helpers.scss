@@ -1,0 +1,70 @@
+// Clearfix
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Texts
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  // Dark Colors
+  &--dark {
+    color: $text-color;
+  }
+
+  // Light Colors
+  &--white {
+    color: $white;
+
+    a {
+      @extend %link--white;
+    }
+  }
+
+  &--small {
+    font-size: rem(14px);
+  }
+}
+
+// Backgrounds
+.bg {
+  // Dark backgrounds
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  // Light backgrounds
+  &--white {
+    background-color: $white;
+  }
+}
+
+.hidden-on-desktop {
+  @include susy-media(desktop) {
+    display: none !important;
+  }
+}
+
+.hidden-on-desktop-wide {
+  @include susy-media(desktopWide) {
+    display: none !important;
+  }
+}
