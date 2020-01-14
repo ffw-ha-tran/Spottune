@@ -29,8 +29,12 @@ h2 {
 }
 
 h3 {
-  font-size: rem(22px);
+  font-size: rem(20px);
   font-weight: bold;
+
+  @include susy-media(tablet) {
+    font-size: rem(22px);
+  }
 }
 
 h4 {
