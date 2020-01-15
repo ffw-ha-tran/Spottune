@@ -118,3 +118,10 @@
     color: $text-color;
   }
 }
+
+// Mixin list style
+@mixin list-style-color($bg-color) {
+  &:before {
+    background-color: $bg-color;
+  }
+}

@@ -16,5 +16,17 @@
     right: 0;
     transform: translateY(-50%);
     z-index: 5;
+
+    a {
+      text-indent: -9999em;
+      width: 22px;
+      height: 22px;
+      overflow: hidden;
+      display: inline-block;
+      background-image: url("../img/maissg/sign-in-light-button.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 22px 22px;
+    }
   }
 }

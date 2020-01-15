@@ -58,7 +58,8 @@ div[overlay="true"] {
   background-size: cover;
 }
 
-%style-lists {
+%style-lists,
+.style-lists {
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
@@ -75,9 +76,25 @@ div[overlay="true"] {
       left: 0;
       width: 7px;
       height: 7px;
-      background-color: $primary-color;
+      //background-color: $primary-color;
       transform: rotate(45deg);
       content: '';
+    }
+
+    &.blue {
+      @include list-style-color($blue);
+    }
+
+    &.yellow {
+      @include list-style-color($yellow);
+    }
+
+    &.pink {
+      @include list-style-color($pink);
+    }
+
+    &.green {
+      @include list-style-color($green);
     }
   }
 }

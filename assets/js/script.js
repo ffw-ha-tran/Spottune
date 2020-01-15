@@ -31,12 +31,4 @@
     setCustomBgColor(el);
   });
 
-  $('a[href^="#"]').click(function() {
-    var target = $(this.hash);
-    if (target.length == 0) target = $('section[id="' + this.hash.substr(1) + '"]');
-    if (target.length == 0) target = $('html');
-    $('html, body').animate({ scrollTop: target.offset().top }, 400);
-    return false;
-  });
-
 }(this, this.document, this.jQuery));

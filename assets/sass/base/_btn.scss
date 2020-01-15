@@ -20,11 +20,7 @@
   transition: all .3s ease;
 
   &.blue {
-    @include button-color($light-blue, $white);
-  }
-
-  &.dark-blue {
-    @include button-color($dark-blue, rgba($white, .5));
+    @include button-color($blue, $white);
   }
 
   &.yellow {
@@ -37,11 +33,5 @@
 
   &.green {
     @include button-color($green, $white);
-  }
-
-  &.large {
-    @include susy-media(mobileLandscape) {
-      min-width: rem(317px);
-    }
   }
 }
